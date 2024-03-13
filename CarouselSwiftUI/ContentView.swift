@@ -33,14 +33,14 @@ struct ContentView: View {
                             
                         case .designOne:
                             DesignOneCardView(card: card, currentIndex: $currentIndex, geometry: geometry)
-                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.7))
+                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.72))
                         case .designTwo:
                             DesignTwoCardView(card: card, currentIndex: $currentIndex, geometry: geometry)
-                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.7))
+                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.72))
 
                         case .designThree:
                             DesignThreeCardView(card: card, currentIndex: $currentIndex, geometry: geometry)
-                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.7))
+                                .offset(x: CGFloat(card.id - currentIndex) * (geometry.size.width * 0.72))
                         }
                     }
                 }
